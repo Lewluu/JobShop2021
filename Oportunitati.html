@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JobShop&#174;2021 | Oportunităţi!</title>
+        <link rel="icon" href="img/favicon.ico">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/logo_best2.png">
+        <link rel="stylesheet" type="text/css" href="style/style.css?version=14">
+        <link rel="stylesheet" type="text/css" href="style/style_mobile.css?version=14">
+        <script type="text/javascript" src="scripts/script.js?version=14"></script>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-2675985-18', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <video autoplay muted loop id="video">
+            <source src="video/space2.mp4" type="video/mp4">
+        </video>
+        <div id="navbar_dropdown">
+            <div id="navbar_dropdown_lines">
+                <div id="navbar_dd_line"></div>
+                <div id="navbar_dd_line"></div>
+                <div id="navbar_dd_line"></div>
+            </div>
+            <div id="navbar_img">
+                <a href="index.html"><img style="width: 100%;" src="img/sigla.png" alt="jobshop" title="JobShop&#174;2021!"></a>
+            </div>
+        </div>
+        <div id="navbar" class="navbar_show"></div>
+        <script>
+            includeNavbar();
+            showNavbar();
+            showDropdownPart();
+        </script>
+        <div id="op_content">
+            <!--
+            <div id="teasing_op">
+                <p><i>Revenim în curând cu detalii despre oportunităţi</i></p>
+            </div>
+            -->
+            <div id="op_content_fl_container">
+                <p>FILTRE</p>
+                <button class="op_content_fl_btn" onclick="filterSelection('all');repeatSpawn();">
+                    Arată tot
+                </button>
+                <button class="op_content_fl_btn" onclick="filterSelection('sw_dev');repeatSpawn();">
+                    SW Development
+                </button>
+                <button class="op_content_fl_btn" onclick="filterSelection('hr');repeatSpawn();">
+                    Human Resources
+                </button>
+                <button class="op_content_fl_btn" onclick="filterSelection('dev_ops');repeatSpawn();">
+                    DevOps
+                </button>
+                <button class="op_content_fl_btn" onclick="filterSelection('tech_supp');repeatSpawn();">
+                    Technical Support
+                </button>
+                <button class="op_content_fl_btn" onclick="filterSelection('qa_auto');repeatSpawn();">
+                    QA Automation
+                </button>
+                <button class="op_content_fl_btn" onclick="filterSelection('be_dev');repeatSpawn();">
+                    Backend Development
+                </button>
+                <button class="op_content_fl_btn" onclick="filterSelection('web_dev');repeatSpawn();">
+                    Web Development
+                </button>
+                <button class="op_content_fl_btn" onclick="filterSelection('mech_eng');repeatSpawn();">
+                    Mechanical Engineering
+                </button>
+            </div>
+            <div id="op_content_el_container">
+                <div class="op_content_fe sw_dev">
+                    <div id="op_content_fe_title">
+                        <h2>GRUP SOFT</h2>
+                    </div>
+                    <div id="op_content_fe_info">
+                        <div id="op_content_fe_desc">
+                            <p id="op_p1">Specializări căutate:</p>
+                            <p><i>- Automatică şi Calcultatoare,
+                            Informatică</i></p>
+                            <p><i>- Developer C# sau Administrator Baze de Date</i></p>
+                            <p id="op_p1">Posturi disponibile: </p>
+                            <p><i>- Developer C# - Beginner - 2 posturi</i></p>
+                            <p id="op_p1">Criterii de angajare:</p>
+                            <p><i>- Cunoştinţe de POO şi C#</i></p>
+                            <p><i>- Disponibilitate de a învăţa</i></p>
+                        </div>
+                        <a href="http://www.grupsoft.ro/gssite/" target="_blank">
+                            <img class="op_gs" src="img/grupsoft.png">
+                        </a>
+                    </div>
+                    <p id="op_category">Software Development</p>
+                    <div id="op_content_fe_btn">
+                        <button onclick="showContact('office@grupsoft.ro','Developer C# Beginner')">
+                            Vreau sa aplic!
+                        </button>
+                    </div>
+                </div>
+                <div class="op_content_fe sw_dev">
+                    <div id="op_content_fe_title">
+                        <h2>GRUP SOFT</h2>
+                    </div>
+                    <div id="op_content_fe_info">
+                        <div id="op_content_fe_desc">
+                            <p id="op_p1">Specializări căutate:</p>
+                            <p><i>- Automatică şi Calcultatoare,
+                            Informatică</i></p>
+                            <p><i>- Developer C# sau Administrator Baze de Date</i></p>
+                            <p id="op_p1">Posturi disponibile: </p>
+                            <p><i>- Developer C# - Senior - 1 post</i></p>
+                            <p id="op_p1">Criterii de angajare:</p>
+                            <p><i>- Cunoştinţe de POO şi C#</i></p>
+                            <p><i>- Disponibilitate de a învăţa</i></p>
+                        </div>
+                        <a href="http://www.grupsoft.ro/gssite/" target="_blank">
+                            <img class="op_gs" src="img/grupsoft.png">
+                        </a>
+                    </div>
+                    <p id="op_category">Software Development</p>
+                    <div id="op_content_fe_btn">
+                        <button onclick="showContact('office@grupsoft.ro','Developer C# Senior')">
+                            Vreau sa aplic!
+                        </button>
+                    </div>
+                </div>
+                <div class="op_content_fe hr">
+                    <div id="op_content_fe_title">
+                        <h2>TRAIN2PERFORM</h2>
+                    </div>
+                    <div id="op_content_fe_info">
+                        <div id="op_content_fe_desc">
+                            <p id="op_p1">Recruitment Assistant</p>
+                            <p><i>
+                                &ensp;Train2Perform este o companie specializată în furnizarea de servicii profesioniste în domeniul Resurselor Umane. Echipa noastră oferă
+                                partenerilor de business soluții personalizate pentru optimizarea relațiilor interumane, acoperind următoarele domenii: recrutare și
+                                selecție de personal, training, consultanță și management al resurselor umane.
+
+                            </i></p>
+                        </div>
+                        <a href="http://train2perform.eu/" target="_blank">
+                            <img class="op_t2p" src="img/train2perform.jpg">
+                        </a>
+                    </div>
+                    <p id="op_category">Human Resources</p>
+                    <div id="op_content_fe_btn">
+                        <button onclick="redirectOp('http://train2perform.eu/43/oportunitati-de-angajare/0/313/recruitment-assistant.html')">
+                            Vreau sa aplic!
+                        </button>
+                    </div>
+                </div>
+                <div class="op_content_fe sw_senior sw_dev">
+                    <div id="op_content_fe_title">
+                        <h2>TRAIN2PERFORM</h2>
+                    </div>
+                    <div id="op_content_fe_info">
+                        <div id="op_content_fe_desc">
+                            <p id="op_p1">Backend Engineer </p>
+                            <p><i>
+                                &ensp;We are looking to recruit for one of our clients -
+                                a Customer driven IT Consultancy Company working at the forefront
+                                of Cloud technologies striving for continuous innovation and
+                                improvement in the quality of their services and own products,
+                                in relation with different major enterprises across the globe.
+                            </i></p>
+                        </div>
+                        <a href="http://train2perform.eu/" target="_blank">
+                            <img class="op_t2p" src="img/train2perform.jpg">
+                        </a>
+                    </div>
+                    <p id="op_category">Software Development</p>
+                    <div id="op_content_fe_btn">
+                        <button onclick="redirectOp('http://train2perform.eu/43/oportunitati-de-angajare/0/204/backend-engineer.html')">
+                            Vreau sa aplic!
+                        </button>
+                    </div>
+                </div>
+                <div class="op_content_fe dev_ops">
+                    <div id="op_content_fe_title">
+                        <h2>TRAIN2PERFORM</h2>
+                    </div>
+                    <div id="op_content_fe_info">
+                        <div id="op_content_fe_desc">
+                            <p id="op_p1">DevOps Engineer </p>
+                            <p><i>
+                                &ensp;We are looking to recruit for one of our clients -
+                                a Customer driven IT Consultancy Company working at the forefront
+                                of Cloud technologies striving for continuous innovation and
+                                improvement in the quality of their services and own products,
+                                in relation with different major enterprises across the globe.
+                            </i></p>
+                        </div>
+                        <a href="http://train2perform.eu/" target="_blank">
+                            <img class="op_t2p" src="img/train2perform.jpg">
+                        </a>
+                    </div>
+                    <p id="op_category">DevOps</p>
+                    <div id="op_content_fe_btn">
+                        <button onclick="redirectOp('http://train2perform.eu/43/oportunitati-de-angajare.html/0/296/devops-engineer.html')">
+                            Vreau sa aplic!
+                        </button>
+                    </div>
+                </div>
+                <div class="op_content_fe tech_supp">
+                    <div id="op_content_fe_title">
+                        <h2>TRAIN2PERFORM</h2>
+                    </div>
+                    <div id="op_content_fe_info">
+                        <div id="op_content_fe_desc">
+                            <p id="op_p1">Network Support Engineer - English & Italian Language </p>
+                            <p><i>
+                                &ensp;We are looking to recruit Network Support Engineer for one of our Clients - a Global
+                                company that provides support to end user customers and partners
+                                across EMEA and Central and South America.
+                            </i></p>
+                        </div>
+                        <a href="http://train2perform.eu/" target="_blank">
+                            <img class="op_t2p" src="img/train2perform.jpg">
+                        </a>
+                    </div>
+                    <p id="op_category">Technical Support</p>
+                    <div id="op_content_fe_btn">
+                        <button onclick="redirectOp('http://train2perform.eu/43/oportunitati-de-angajare.html/0/291/network-support-engineer-english-italian-language.html')">
+                            Vreau sa aplic!
+                        </button>
+                    </div>
+                </div>
+                <div class="op_content_fe qa_auto">
+                    <div id="op_content_fe_title">
+                        <h2>BYTEX</h2>
+                    </div>
+                    <div id="op_content_fe_info">
+                        <div id="op_content_fe_desc">
+                            <p id="op_p1">QA Automation (python)</p>
+                            <br>
+                            <p><i>
+                                &ensp;We're looking for a passionate, professionally driven developer
+                                to work on a Cisco networking project. The role implies to design and
+                                execute test plans and test cases that will help to ensure that the
+                                organization delivers a high quality product. You will be part of an
+                                Agile software development team and should have a basic understanding
+                                of the Agile software development methodologies.
+                            </i></p>
+                        </div>
+                        <a href="https://bytex.net/" target="_blank">
+                            <img class="op_bytex" src="img/Bytex.png">
+                        </a>
+                    </div>
+                    <p id="op_category">QA Automation</p>
+                    <div id="op_content_fe_btn">
+                        <button onclick="redirectOp('https://bytex.net/careers/qa-engineer/')">
+                            Vreau sa aplic!
+                        </button>
+                    </div>
+                </div>
+                <div class="op_content_fe qa_auto">
+                    <div id="op_content_fe_title">
+                        <h2>BYTEX</h2>
+                    </div>
+                    <div id="op_content_fe_info">
+                        <div id="op_content_fe_desc">
+                            <p id="op_p1">QA Automation (cypress)</p>
+                            <br>
+                            <p><i>
+                                &ensp;We're looking for a passionate, professionally tester to work
+                                on an enterprise ISP product. The role implies to design and execute test
+                                plans and test cases that will help to ensure that the organization
+                                delivers a high quality product. You will be part of an Agile software
+                                development team and should have a basic understanding of the Agile software
+                                development methodologies.
+                            </i></p>
+                        </div>
+                        <a href="https://bytex.net/" target="_blank">
+                            <img class="op_bytex" src="img/Bytex.png">
+                        </a>
+                    </div>
+                    <p id="op_category">QA Automation</p>
+                    <div id="op_content_fe_btn">
+                        <button onclick="redirectOp('https://bytex.net/careers/mid-qa-automation-cypress/')">
+                            Vreau sa aplic!
+                        </button>
+                    </div>
+                </div>
+                <div class="op_content_fe be_dev">
+                    <div id="op_content_fe_title">
+                        <h2>BYTEX</h2>
+                    </div>
+                    <div id="op_content_fe_info">
+                        <div id="op_content_fe_desc">
+                            <p id="op_p1">Golang Developer</p>
+                            <br>
+                            <p><i>
+                                &ensp;We're looking for a passionate, professionaly-driven developer to work on
+                                a Cisco networking product. The role consists of implementation of code, test,
+                                and code review with Go programming language.
+                            </i></p>
+                        </div>
+                        <a href="https://bytex.net/" target="_blank">
+                            <img class="op_bytex" src="img/Bytex.png">
+                        </a>
+                    </div>
+                    <p id="op_category">Backend Development</p>
+                    <div id="op_content_fe_btn">
+                        <button onclick="redirectOp('https://bytex.net/careers/golang-developer/')">
+                            Vreau sa aplic!
+                        </button>
+                    </div>
+                </div>
+                <div class="op_content_fe web_dev">
+                    <div id="op_content_fe_title">
+                        <h2>CROWD FAVORITE</h2>
+                    </div>
+                    <div id="op_content_fe_info">
+                        <div id="op_content_fe_desc">
+                            <p id="op_p1">Domeniul de activitate</p>
+                            <p><i>- Digital Agency</i></p>
+                            <p id="op_p1">Posturi disponibile</p>
+                            <p><i>- Remote Open Source Developer</i></p>
+                            <p id="op_p1">Alte oportunităţi</p>
+                            <p>- Dezvoltare în cadrul echipei, lucrul cu cele mai mari
+                            companii din lume, lucrul în cadrul unei companii cu o tradiţie
+                            de aproape 20 de ani.</p>
+                        </div>
+                        <a href="https://crowdfavorite.com/" target="_blank">
+                            <img class="op_cf" src="img/CrowdFavorite.png">
+                        </a>
+                    </div>
+                    <p id="op_category">Web Developing</p>
+                    <div id="op_content_fe_btn">
+                        <button onclick="redirectOp('https://apply.workable.com/crowd-favorite/j/E653B9A432/')">
+                            Vreau sa aplic!
+                        </button>
+                    </div>
+                </div>
+                <div class="op_content_fe web_dev">
+                    <div id="op_content_fe_title">
+                        <h2>CROWD FAVORITE</h2>
+                    </div>
+                    <div id="op_content_fe_info">
+                        <div id="op_content_fe_desc">
+                            <p id="op_p1">Domeniul de activitate</p>
+                            <p><i>- Digital Agency</i></p>
+                            <p id="op_p1">Posturi disponibile</p>
+                            <p><i>- Remote PHP Developer with JavaScript experience</i></p>
+                            <p id="op_p1">Alte oportunităţi</p>
+                            <p>- Dezvoltare în cadrul echipei, lucrul cu cele mai mari
+                            companii din lume, lucrul în cadrul unei companii cu o tradiţie
+                            de aproape 20 de ani.</p>
+                        </div>
+                        <a href="https://crowdfavorite.com/" target="_blank">
+                            <img class="op_cf" src="img/CrowdFavorite.png">
+                        </a>
+                    </div>
+                    <p id="op_category">Web Developing</p>
+                    <div id="op_content_fe_btn">
+                        <button onclick="redirectOp('https://apply.workable.com/crowd-favorite/j/C78B6D2931/')">
+                            Vreau sa aplic!
+                        </button>
+                    </div>
+                </div>
+                <div class="op_content_fe sw_dev">
+                    <div id="op_content_fe_title">
+                        <h2>VITESCO</h2>
+                    </div>
+                    <div id="op_content_fe_info">
+                        <div id="op_content_fe_desc">
+                            <p id="op_p1">Job Description :</p>
+                            <p>As an Internship in our <b>CSW Software Development Group</b>, you will have the opportunity to:</p>
+                            <p><i>- start a professional career in the automotive industry;</i></p>
+                            <p><i>- boost your knowledge by learning from people with extended experience in automotive and SW development;</i></p>
+                            <p><i>- support the development of some of the most innovative products in the automotive industry.</i></p>
+                            <p id="op_1">Job Requirements</p>
+                            <p><i>- Student at an University in a relevant field (Computer Science, Electronics and Communication, Informatics)</i></p>
+                            <p><i>- Good programming skills in ANSI C</i></p>
+                            <p><i>- Good level of English</i></p>
+                        </div>
+                        <a href="https://www.vitesco-technologies.com/en/" target="_blank">
+                            <img src="img/vitesco.jpg">
+                        </a>
+                    </div>
+                    <p id="op_category">Software Development</p>
+                    <div id="op_content_fe_btn">
+                        <button onclick="redirectOp('https://jobs.vitesco-technologies.com/job/Iasi-Software-Internship-for-CSW-Electronic-Controls-Iasi/728848802/')">
+                            Vreau sa aplic!
+                        </button>
+                    </div>
+                </div>
+                <div class="op_content_fe sw_dev">
+                    <div id="op_content_fe_title">
+                        <h2>VITESCO</h2>
+                    </div>
+                    <div id="op_content_fe_info">
+                        <div id="op_content_fe_desc">
+                            <p id="op_p1">Job Description :</p>
+                            <p>As an Internship for <b>Basic Software Platform</b>, you will:</p>
+                            <p><i>- Develop scripts or tools to support software developmet activites in the team</i></p>
+                            <p><i>- Develop embedded software for MCU peripheral modules and services(e.g.commuication, diagnostic, memory access)</i></p>
+                            <p><i>- Follow company standards applicable in all SW development phases(requirements, design, coding, tests)</i></p>
+                            <p>&ensp;A mentor will guide you step by step to take over your own responsibility</p><br>
+                            <p>&ensp;An initial training session will familiarize you with our products, tools, processes, and organization</p>
+                        </div>
+                        <a href="https://www.vitesco-technologies.com/en/" target="_blank">
+                            <img src="img/vitesco.jpg">
+                        </a>
+                    </div>
+                    <p id="op_category">Software Development</p>
+                    <div id="op_content_fe_btn">
+                        <button onclick="redirectOp('https://jobs.vitesco-technologies.com/job/Iasi-Internship-for-Basic-Software-Platform-Iasi-Electrification-Technology-Iasi/728848302/')">
+                            Vreau sa aplic!
+                        </button>
+                    </div>
+                </div>
+                <div class="op_content_fe mech_eng">
+                    <div id="op_content_fe_title">
+                        <h2>VITESCO</h2>
+                    </div>
+                    <div id="op_content_fe_info">
+                        <div id="op_content_fe_desc">
+                            <p id="op_p1">Job Description :</p>
+                            <p><i>- Basic knowledge of mechanical design process</i></p>
+                            <p><i>- Introduction on design model based on specific technologies</i></p>
+                            <p><i>- Is responsible for logistic activities (packaging, handling, delivery and tracking) of packages</i></p>
+                            <p><i>- Offer support with logistic activities for achieving</i></p>
+                            <p><i>- Collaborates with the project team in order to complete own job efficiently</i></p>
+                            <p><i>- Respects the confidentiality of information he/she has access to inside the company</i></p>
+                            <p><i>- Follows the instructions and requirements of management personnel inside the company</i></p>
+                            <p><i>- Respects Internal Regulations and company's procedures</i></p>
+                            <p><i>- Respects information security and data protection regulations</i></p>
+                            <p><i>- Respects specific laws and internal regulations connected to company's environment policy</i></p>
+                        </div>
+                        <a href="https://www.vitesco-technologies.com/en/" target="_blank">
+                            <img src="img/vitesco.jpg">
+                        </a>
+                    </div>
+                    <p id="op_category">Mechanical Engineering</p>
+                    <div id="op_content_fe_btn">
+                        <button onclick="redirectOp('https://jobs.vitesco-technologies.com/job/Iasi-Internship-Mechanical-Engineer-for-Electrification-Technology-Iasi/727637502/')">
+                            Vreau sa aplic!
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <script>
+                filterSelection("all");
+            </script>
+        </div>
+        <div id="footer">
+            <div id="footer_content">
+                <div id="footer_links">
+                    <div id="footer_img_box_media">
+                        <img id="facebook" src="img/fb2.png" alt="jobshop" title="JobShop&#174;2021!">
+                        <img id="insta" src="img/insta2.png" alt="jobshop" title="JobShop&#174;2021!">
+                        <img id="youtube" src="img/yt2.png" alt="jobshop" title="JobShop&#174;2021!">
+                        <img id="linkedin" src="img/linkedin2.png" alt="jobshop" title="JobShop&#174;2021!">
+                    </div>
+                    <div id="footer_img_box_web">
+                        <img id="fsigla" class="footer_sigla" src="img/logo_best3.png" alt="jobshop" title="JobShop&#174;2021!">
+                        <img id="univ" class="univ" src="img/tuiasi_buna.png" alt="jobshop" title="JobShop&#174;2021!">
+                    </div>
+                </div>
+                <script>
+                    redirect();
+                </script>
+                <div id="footer_message">
+                    <h2>CE AI FĂCUT ASTĂZI PENTRU VIITORUL TĂU?</h2>
+                </div>
+                <div id="footer_adress_box">
+                    <p>Cămin T11</p>
+                    <p>Aleea Profesor Gheorghe Alexa, Iaşi</p>
+                    <p>+40 755 085 574</p>
+                    <p>contact@bestis.ro</p>
+                </div>
+            </div>
+            <div id="footer_copyright">
+                <p>Copyright<span>&#169;</span> ASOCIAŢIA "GRUPUL LOCAL BEST" IAŞI</p>
+            </div>
+        </div>
+    </body>
+</html>
